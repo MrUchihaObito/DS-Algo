@@ -28,9 +28,10 @@ class Solution {
 	                if(c==-1)c=INT_MAX;
 	                
 	                
-	                if(a!=INT_MAX && b!=INT_MAX)
+	                if(a!=INT_MAX && b!=INT_MAX && a+b<c)
 	                {
-	                    c=min(c,a+b);
+	                    //c=min(c,a+b);
+	                    c=a+b;
 	                }
 	                if(c==INT_MAX)
 	                c=-1;
